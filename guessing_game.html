@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  (function() {
+     var i = 0;
+     var answer = 50;
+     var guess = prompt('Guess the number. You have five guesses.');
+     guess = Number.parseInt(guess);
+     while (i<4)
+      if (guess === answer) {
+      alert('You got it!');
+      break;
+     } else if (guess < answer) {
+      guess = Number.parseInt(prompt('too low'))
+      i++;
+     } else if (guess > answer) {
+      guess = Number.parseInt(prompt('too high'))
+      i++;
+     }
+  })();
+</script>
