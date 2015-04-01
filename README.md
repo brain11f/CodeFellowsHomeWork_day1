@@ -1,2 +1,1 @@
-# CodeFellowsHomeWork_day1
-# CodeFellowsHomeWork_day1
+Restructured using init function. Got assistance from David Zager at OK Rocket. 
