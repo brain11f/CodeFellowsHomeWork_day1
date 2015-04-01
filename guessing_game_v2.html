@@ -1,19 +1,16 @@
 <script type="text/javascript">
   (function() {
-     var i = 0;
-     var answer = 50;
-     var guess = prompt('Guess the number. You have five guesses.');
-     guess = Number.parseInt(guess);
-     while (i<4)
+        var answer = Math.floor(Math.random()*2);
+        var guess = prompt('Try to guess 1 or 0 correctly as many times as you can');
+        var correct = false;
+        guess = Number.parseInt(guess);
+    while (true)
       if (guess === answer) {
-      alert('You got it!');
-      break;
-     } else if (guess < answer) {
-      guess = Number.parseInt(prompt('too low'))
-      i++;
-     } else if (guess > answer) {
-      guess = Number.parseInt(prompt('too high'))
-      i++;
-     }
+        alert('You got it!');
+        break;
+      } else {
+        prompt('Wrong Answer')
+        break;
+      }
   })();
 </script>
