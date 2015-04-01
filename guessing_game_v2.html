@@ -1,16 +1,21 @@
-<script type="text/javascript">
-  (function() {
-        function question() {
-          prompt('Try to guess 1 or 0 correctly as many times as you can');
-        }
-        var answer = Math.floor(Math.random()*2);
-        var guess = prompt('Try to guess 1 or 0 correctly as many times as you can');
-        guess = Number.parseInt(guess);
-      if (guess === answer) {
-        alert('You got it!');
-        question();
-      } else {
-        alert('Wrong Answer');
-      }
-  })();
+<script>
+  (function() {
+
+    function init(){
+
+      answer = Math.floor(Math.random()*2);
+      console.log("answer: "+ answer);
+      guess = prompt('Try to guess 1 or 0 correctly as many times as you can');
+
+      if(guess != answer){
+        console.log("wrong");
+        alert("wrong");
+      }else{
+        console.log("correct");
+        init()
+      }
+    }
+    init();
+
+  })();
 </script>
