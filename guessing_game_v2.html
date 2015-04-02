@@ -1,4 +1,5 @@
 <script>
+(function(){
     var syllable = [];
     var arr = [];
     var arrQuestion1 = [0,0,0];
@@ -28,7 +29,6 @@
       console.log(arrQuestion1);
     }
     oneOrZero();
-       console.log(name);
 
       if (arrQuestion1.toString() === arr.toString()){
         console.log('Yaa it worked1!');
@@ -85,8 +85,7 @@
       } else {
         console.log("wrong8");
       }
-
-      console.log(name);
+      console.log(syllable)
       var Person = function(syllable1, syllable2) {
         this.syllable1 = syllable1;
         this.syllable2 = syllable2;
@@ -94,5 +93,5 @@
             return 'Hi, I am ' + this.syllable1 + this.syllable2;
     };
 }
-
+})();
 </script>
