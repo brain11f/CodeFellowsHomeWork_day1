@@ -1,4 +1,104 @@
 <script>
+
+  (function() {
+    var name = [];
+    var arr = [];
+    var arrQuestion1 = [0,0,0];
+    var arrQuestion2 = [1,0,0];
+    var arrQuestion3 = [1,1,0];
+    var arrQuestion4 = [1,1,1];
+    var arrQuestion5 = [0,1,1];
+    var arrQuestion6 = [1,0,1];
+    var arrQuestion7 = [0,1,0];
+    var arrQuestion8 = [0,0,1];
+
+    function oneOrZero() {
+
+      answer1 = Math.floor(Math.random()*2);
+      answer2 = Math.floor(Math.random()*2);
+      answer3 = Math.floor(Math.random()*2);
+
+      console.log("answer: " + answer1);
+      console.log("answer: " + answer2);
+      console.log("answer: " + answer3);
+
+      arr.push(answer1);
+      arr.push(answer2);
+      arr.push(answer3);
+
+      console.log(arr);
+      console.log(arrQuestion1);
+    }
+    oneOrZero();
+
+    var createName = function() {
+      if (arrQuestion1.toString() === arr.toString()){
+        console.log('Yaa it worked1!');
+        name.push('sas');
+      } else {
+        console.log("wrong1");
+      }
+
+      if (arrQuestion2.toString() === arr.toString()){
+        console.log('Yaa it worked2!');
+        name.push('bob');
+      } else {
+        console.log("wrong2");
+      }
+
+      if (arrQuestion3.toString() === arr.toString()){
+        console.log('Yaa it worked3!');
+        name.push('jue');
+      } else {
+        console.log("wrong3");
+      }
+
+      if (arrQuestion4.toString() === arr.toString()){
+        console.log('Yaa it worked4!');
+        name.push('rap');
+      } else {
+        console.log("wrong4");
+      }
+
+      if (arrQuestion5.toString() === arr.toString()){
+        console.log('Yaa it worked5!');
+        name.push('er');
+      } else {
+        console.log("wrong5");
+      }
+
+      if (arrQuestion6.toString() === arr.toString()){
+        console.log('Yaa it worked6!');
+        name.push('lap');
+      } else {
+        console.log("wrong6");
+      }
+
+      if (arrQuestion7.toString() === arr.toString()){
+        console.log('Yaa it worked7!');
+        name.push('but');
+      } else {
+        console.log("wrong7");
+      }
+
+      if (arrQuestion8.toString() === arr.toString()){
+        console.log('Yaa it worked8!');
+        name.push('dic');
+      } else {
+        console.log("wrong8");
+      }
+    }
+
+      var Person = function(syllable1, syllable2) {
+        this.syllable1 = syllable1
+        this.syllable2 = syllable2
+          this.sayHi = function(){
+            return 'Hi, I am ' + this.syllable1 + this.syllable2
+    }
+}
+
+  })();
+
   (function() {
 
     function init(){
@@ -18,4 +118,5 @@
     init();
 
   })();
+
 </script>
