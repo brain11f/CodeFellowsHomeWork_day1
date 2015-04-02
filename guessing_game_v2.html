@@ -1,7 +1,5 @@
 <script>
-
-  (function() {
-    var name = [];
+    var syllable = [];
     var arr = [];
     var arrQuestion1 = [0,0,0];
     var arrQuestion2 = [1,0,0];
@@ -30,93 +28,71 @@
       console.log(arrQuestion1);
     }
     oneOrZero();
+       console.log(name);
 
-    var createName = function() {
       if (arrQuestion1.toString() === arr.toString()){
         console.log('Yaa it worked1!');
-        name.push('sas');
+        syllable.push('sas');
       } else {
         console.log("wrong1");
       }
 
       if (arrQuestion2.toString() === arr.toString()){
         console.log('Yaa it worked2!');
-        name.push('bob');
+        syllable.push('bob');
       } else {
         console.log("wrong2");
       }
 
       if (arrQuestion3.toString() === arr.toString()){
         console.log('Yaa it worked3!');
-        name.push('jue');
+        syllable.push('jue');
       } else {
         console.log("wrong3");
       }
 
       if (arrQuestion4.toString() === arr.toString()){
         console.log('Yaa it worked4!');
-        name.push('rap');
+        syllable.push('rap');
       } else {
         console.log("wrong4");
       }
 
       if (arrQuestion5.toString() === arr.toString()){
         console.log('Yaa it worked5!');
-        name.push('er');
+        syllable.push('er');
       } else {
         console.log("wrong5");
       }
 
       if (arrQuestion6.toString() === arr.toString()){
         console.log('Yaa it worked6!');
-        name.push('lap');
+        syllable.push('lap');
       } else {
         console.log("wrong6");
       }
 
       if (arrQuestion7.toString() === arr.toString()){
         console.log('Yaa it worked7!');
-        name.push('but');
+        syllable.push('but');
       } else {
         console.log("wrong7");
       }
 
       if (arrQuestion8.toString() === arr.toString()){
         console.log('Yaa it worked8!');
-        name.push('dic');
+        syllable.push('dic');
       } else {
         console.log("wrong8");
       }
-    }
 
+      console.log(name);
       var Person = function(syllable1, syllable2) {
-        this.syllable1 = syllable1
-        this.syllable2 = syllable2
+        this.syllable1 = syllable1;
+        this.syllable2 = syllable2;
           this.sayHi = function(){
-            return 'Hi, I am ' + this.syllable1 + this.syllable2
-    }
+            return 'Hi, I am ' + this.syllable1 + this.syllable2;
+    };
 }
-
-  })();
-
-  (function() {
-
-    function init(){
-
-      answer = Math.floor(Math.random()*2);
-      console.log("answer: "+ answer);
-      guess = prompt('Try to guess 1 or 0 correctly as many times as you can');
-
-      if(guess != answer){
-        console.log("wrong");
-        alert("wrong");
-      }else{
-        console.log("correct");
-        init()
-      }
-    }
-    init();
-
-  })();
 
 </script>
