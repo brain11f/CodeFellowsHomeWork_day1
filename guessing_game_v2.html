@@ -1,7 +1,8 @@
 <script>
 (function(){
     var syllable = [];
-    var arr = [];
+    var arr1 = [];
+    var arr2 = [];
     var arrQuestion1 = [0,0,0];
     var arrQuestion2 = [1,0,0];
     var arrQuestion3 = [1,1,0];
@@ -11,7 +12,7 @@
     var arrQuestion7 = [0,1,0];
     var arrQuestion8 = [0,0,1];
 
-    function oneOrZero() {
+    function oneOrZero1() {
 
       answer1 = Math.floor(Math.random()*2);
       answer2 = Math.floor(Math.random()*2);
@@ -21,77 +22,98 @@
       console.log("answer: " + answer2);
       console.log("answer: " + answer3);
 
-      arr.push(answer1);
-      arr.push(answer2);
-      arr.push(answer3);
+      arr1.push(answer1);
+      arr1.push(answer2);
+      arr1.push(answer3);
 
-      console.log(arr);
+      console.log(arr1);
       console.log(arrQuestion1);
     }
-    oneOrZero();
+    oneOrZero1();
 
-      if (arrQuestion1.toString() === arr.toString()){
+    function oneOrZero2() {
+
+      answer1 = Math.floor(Math.random()*2);
+      answer2 = Math.floor(Math.random()*2);
+      answer3 = Math.floor(Math.random()*2);
+
+      console.log("answer: " + answer1);
+      console.log("answer: " + answer2);
+      console.log("answer: " + answer3);
+
+      arr2.push(answer1);
+      arr2.push(answer2);
+      arr2.push(answer3);
+
+      console.log(arr2);
+      console.log(arrQuestion1);
+    }
+    oneOrZero2();
+
+      if (arrQuestion1.toString() === arr1.toString() || arrQuestion1.toString() === arr2.toString()){
         console.log('Yaa it worked1!');
-        syllable.push('sas');
+        syllable.push('Adrahil');
       } else {
         console.log("wrong1");
       }
 
-      if (arrQuestion2.toString() === arr.toString()){
+      if (arrQuestion2.toString() === arr1.toString() || arrQuestion2.toString() === arr2.toString()){
         console.log('Yaa it worked2!');
-        syllable.push('bob');
+        syllable.push('Bob');
       } else {
         console.log("wrong2");
       }
 
-      if (arrQuestion3.toString() === arr.toString()){
+      if (arrQuestion3.toString() === arr1.toString() || arrQuestion3.toString() === arr2.toString()){
         console.log('Yaa it worked3!');
-        syllable.push('jue');
+        syllable.push('Clementine');
       } else {
         console.log("wrong3");
       }
 
-      if (arrQuestion4.toString() === arr.toString()){
+      if (arrQuestion4.toString() === arr1.toString() || arrQuestion4.toString() === arr2.toString()){
         console.log('Yaa it worked4!');
-        syllable.push('rap');
+        syllable.push('Duke');
       } else {
         console.log("wrong4");
       }
 
-      if (arrQuestion5.toString() === arr.toString()){
+      if (arrQuestion5.toString() === arr1.toString() || arrQuestion5.toString() === arr2.toString()){
         console.log('Yaa it worked5!');
-        syllable.push('er');
+        syllable.push('Beatrix');
       } else {
         console.log("wrong5");
       }
 
-      if (arrQuestion6.toString() === arr.toString()){
+      if (arrQuestion6.toString() === arr1.toString() || arrQuestion6.toString() === arr2.toString()){
         console.log('Yaa it worked6!');
-        syllable.push('lap');
+        syllable.push('Piper');
       } else {
         console.log("wrong6");
       }
 
-      if (arrQuestion7.toString() === arr.toString()){
+      if (arrQuestion7.toString() === arr1.toString() || arrQuestion7.toString() === arr2.toString()){
         console.log('Yaa it worked7!');
-        syllable.push('but');
+        syllable.push('Zinnia');
       } else {
         console.log("wrong7");
       }
 
-      if (arrQuestion8.toString() === arr.toString()){
+      if (arrQuestion8.toString() === arr1.toString() || arrQuestion8.toString() === arr2.toString()){
         console.log('Yaa it worked8!');
-        syllable.push('dic');
+        syllable.push('Blaire');
       } else {
         console.log("wrong8");
       }
       console.log(syllable)
-      var Person = function(syllable1, syllable2) {
+      var personName = function(syllable, syllable) {
         this.syllable1 = syllable1;
         this.syllable2 = syllable2;
           this.sayHi = function(){
-            return 'Hi, I am ' + this.syllable1 + this.syllable2;
+            console.log('Hi, I am ' + this.syllable1 + this.syllable2);
     };
+    personName();
+    console.log(syllable);
 }
 })();
 </script>
